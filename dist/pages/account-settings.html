@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="Codescandy" name="author">
-	<title>Settings eCommerce HTML Template - FreshCart</title>
+	<title>Boardgame Mania - 내 정보 수정 (기본 정보)</title>
 	<!-- Favicon icon-->
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
@@ -177,7 +177,8 @@
 								</a>
 							</div>
 							<div class="list-inline-item me-5">
-								<a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
+								<a href="./signup.html" class="text-muted">
+								<!-- <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal"> -->
 									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
 										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 										stroke-linejoin="round" class="feather feather-user">
@@ -461,29 +462,31 @@
 								</li>
 								<li class="nav-item dropdown w-100 w-lg-auto">
 									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">Account</a>
+										aria-expanded="false">My Page</a>
 									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="../pages/signin.html">Sign in</a></li>
-										<li><a class="dropdown-item" href="../pages/signup.html">Signup</a></li>
-										<li><a class="dropdown-item" href="../pages/forgot-password.html">Forgot
-												Password</a></li>
+										<li><a class="dropdown-item"
+												href="../pages/account-orders.html">주문 내역</a></li>
+										<li><a class="dropdown-item"
+												href="../pages/account-address.html">배송지 주소</a></li>
+										<li><a class="dropdown-item"
+												href="../pages/account-payment-method.html">지불 수단</a>
+										</li>
+
 										<li class="dropdown-submenu dropend">
 											<a class="dropdown-item dropdown-list-group-item dropdown-toggle"
-												href="#">My Account</a>
+												href="#">내 정보 관리</a>
 											<ul class="dropdown-menu">
 												<li><a class="dropdown-item"
-														href="../pages/account-orders.html">Orders</a></li>
+														href="../pages/account-settings.html">기본 정보 변경</a></li>
 												<li><a class="dropdown-item"
-														href="../pages/account-settings.html">Settings</a></li>
+														href="../pages/account-settings-pwd.html">비밀번호 변경</a></li>
 												<li><a class="dropdown-item"
-														href="../pages/account-address.html">Address</a></li>
-												<li><a class="dropdown-item"
-														href="../pages/account-payment-method.html">Payment Method</a>
-												</li>
-												<li><a class="dropdown-item"
-														href="../pages/account-notification.html">Notification</a>
+														href="../pages/account-settings-withdrawal.html">회원 탈퇴</a>
 												</li>
 											</ul>
+										</li>
+										<li><a class="dropdown-item"
+												href="../pages/account-notification.html">알림 설정</a>
 										</li>
 									</ul>
 								</li>
@@ -974,7 +977,6 @@
 		</div>
 	</div>
 
-	<script src="../assets/js/vendors/validation.js"></script>
 	<main>
 		<!-- section -->
 		<section>
@@ -998,40 +1000,70 @@
 					<!-- col -->
 					<div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
 						<div class="pt-10 pe-lg-10">
-							<!-- nav item -->
 							<ul class="nav flex-column nav-pills nav-pills-dark">
+								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link" aria-current="page" href="account-orders.html">
-										<i class="feather-icon icon-shopping-bag me-2"></i>
-										Your Orders
-									</a>
+									<h5>나의 쇼핑 정보</h5>
+									<ul class="nav flex-column nav-pills nav-pills-dark">
+										<!-- nav item -->
+										<li class="nav-item">
+											<a class="nav-link" aria-current="page" href="account-orders.html">
+												<i class="feather-icon icon-shopping-bag me-2"></i>
+												주문 내역
+											</a>
+										</li>
+										<!-- nav item -->
+										<li class="nav-item">
+											<a class="nav-link" href="account-address.html">
+												<i class="feather-icon icon-map-pin me-2"></i>
+												배송지 주소
+											</a>
+										</li>
+										<!-- nav item -->
+										<li class="nav-item">
+											<a class="nav-link" href="account-payment-method.html">
+												<i class="feather-icon icon-credit-card me-2"></i>
+												지불 수단
+											</a>
+										</li>
+									</ul>
 								</li>
 								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link active" href="account-settings.html">
-										<i class="feather-icon icon-settings me-2"></i>
-										Settings
-									</a>
+									<hr />
+								</li>
+								<li class="nav-item">
+									<h5>내 정보 관리</h5>
+									<ul class="nav flex-column nav-pills nav-pills-dark">
+										<!-- nav item -->
+										<li class="nav-item">
+											<a class="nav-link active" href="account-settings.html">
+												<i class="feather-icon icon-settings me-2"></i>
+												기본 정보 변경
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="account-settings-pwd.html">
+												<i class="feather-icon icon-key me-2"></i>
+												비밀번호 변경
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="account-settings-withdrawal.html">
+												<i class="feather-icon icon-user-x me-2"></i>
+												회원 탈퇴
+											</a>
+										</li>
+									</ul>
 								</li>
 								<!-- nav item -->
 								<li class="nav-item">
-									<a class="nav-link" href="account-address.html">
-										<i class="feather-icon icon-map-pin me-2"></i>
-										Address
-									</a>
+									<hr />
 								</li>
-								<!-- nav item -->
-								<li class="nav-item">
-									<a class="nav-link" href="account-payment-method.html">
-										<i class="feather-icon icon-credit-card me-2"></i>
-										Payment Method
-									</a>
-								</li>
-								<!-- nav item -->
 								<li class="nav-item">
 									<a class="nav-link" href="account-notification.html">
 										<i class="feather-icon icon-bell me-2"></i>
-										Notification
+										알림 설정
 									</a>
 								</li>
 								<!-- nav item -->
@@ -1042,7 +1074,7 @@
 								<li class="nav-item">
 									<a class="nav-link" href="../index.html">
 										<i class="feather-icon icon-log-out me-2"></i>
-										Log out
+										로그아웃
 									</a>
 								</li>
 							</ul>
@@ -1052,73 +1084,69 @@
 						<div class="py-6 p-md-6 p-lg-10">
 							<div class="mb-6">
 								<!-- heading -->
-								<h2 class="mb-0">Account Setting</h2>
+								<h3 class="mb-0">기본 정보 변경</h3>
 							</div>
 							<div>
 								<!-- heading -->
-								<h5 class="mb-4">Account details</h5>
 								<div class="row">
-									<div class="col-lg-5">
+									<div class="col-lg-6">
 										<!-- form -->
-										<form>
+										<form class="needs-validation" novalidate>
 											<!-- input -->
 											<div class="mb-3">
-												<label class="form-label">Name</label>
-												<input type="text" class="form-control" placeholder="jitu chauhan" />
+												<label class="form-label">아이디</label>
+												<input type="text" class="form-control" placeholder="mj373737" disabled />
 											</div>
 											<!-- input -->
 											<div class="mb-3">
-												<label class="form-label">Email</label>
-												<input type="email" class="form-control"
-													placeholder="example@gmail.com" />
+												<label class="form-label">이름</label>
+												<input type="text" class="form-control" placeholder="김민주" disabled />
 											</div>
 											<!-- input -->
+											<div class="mb-3">
+												<label for="formSigninEmail" class="form-label">이메일</label>
+												<input type="email" class="form-control" id="formSigninEmail" 
+													placeholder="example@gmail.com" value="mj373737@gmail.com" required />
+												<div class="invalid-feedback">이메일을 입력해 주세요.</div>
+											</div>
+											<!-- input -->
+											<div class="mb-3">
+												<label class="form-label">생년월일</label>
+												<div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3">
+													<div calss="col">
+														<input type="number" class="form-control" id="birthYear" placeholder="생년" value="2000" oninput="handleOnInput(this, 4)" required />
+														<div class="invalid-feedback">네 자리 연도를 입력해 주세요.</div>
+													</div>
+													<div calss="col">
+														<input type="number" class="form-control" id="birthMonth" placeholder="월" value="10" oninput="handleOnInput(this, 2)" required />
+														<div class="invalid-feedback">두 자리 달을 입력해 주세요.</div>
+													</div>
+													<div calss="col">
+														<input type="number" class="form-control" id="birthDay" placeholder="일" value="17" oninput="handleOnInput(this, 2)" required />
+														<div class="invalid-feedback">두 자리 날짜를 입력해 주세요.</div>
+													</div>
+												</div>
+											</div>
 											<div class="mb-5">
-												<label class="form-label">Phone</label>
-												<input type="text" class="form-control" placeholder="Phone number" />
+												<label class="form-label">성별</label>
+												<div class="row">
+													<div class="col-3">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="maleRadio" />
+														<label class="form-check-label text-dark" for="maleRadio">남</label>
+													</div>
+													<div class="col-3">
+														<input class="form-check-input" type="radio" name="flexRadioDefault" id="femaleRadio" checked />
+														<label class="form-check-label text-dark" for="femaleRadio">여</label>
+													</div>
+												</div>
 											</div>
 											<!-- button -->
 											<div class="mb-3">
-												<button class="btn btn-primary">Save Details</button>
+												<button class="btn btn-primary" type="submit">저장</button>
 											</div>
 										</form>
 									</div>
 								</div>
-							</div>
-							<hr class="my-10" />
-							<div class="pe-lg-14">
-								<!-- heading -->
-								<h5 class="mb-4">Password</h5>
-								<form class="row row-cols-1 row-cols-lg-2">
-									<!-- input -->
-									<div class="mb-3 col">
-										<label class="form-label">New Password</label>
-										<input type="password" class="form-control" placeholder="**********" />
-									</div>
-									<!-- input -->
-									<div class="mb-3 col">
-										<label class="form-label">Current Password</label>
-										<input type="password" class="form-control" placeholder="**********" />
-									</div>
-									<!-- input -->
-									<div class="col-12">
-										<p class="mb-4">
-											Can’t remember your current password?
-											<a href="#">Reset your password.</a>
-										</p>
-										<a href="#" class="btn btn-primary">Save Password</a>
-									</div>
-								</form>
-							</div>
-							<hr class="my-10" />
-							<div>
-								<!-- heading -->
-								<h5 class="mb-4">Delete Account</h5>
-								<p class="mb-2">Would you like to delete your account?</p>
-								<p class="mb-5">This account contain 12 orders, Deleting your account will remove all
-									the order details associated with it.</p>
-								<!-- btn -->
-								<a href="#" class="btn btn-outline-danger">I want to delete my account</a>
 							</div>
 						</div>
 					</div>
@@ -1368,6 +1396,18 @@
 
 	<!-- Theme JS -->
 	<script src="../assets/js/theme.min.js"></script>
+
+	<script src="../assets/js/vendors/validation.js"></script>
+
+	<script src="../assets/js/vendors/password.js"></script>
+
+	<script type="text/javascript">
+		function handleOnInput(el, maxlength) {
+			if(el.value.length > maxlength) {
+				el.value = el.value.substr(0, maxlength);
+			}
+		}
+	</script>
 
 </body>
 

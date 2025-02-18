@@ -95,7 +95,7 @@
                       <input type="password" class="form-control fakePassword" id="formSigninPassword"
                         placeholder="비밀번호 재입력" required />
                       <span><i class="bi bi-eye-slash passwordToggler"></i></span>
-                      <div class="invalid-feedback">동일한 비밀번호를 다시 입력해 주세요.</div>
+                      <div class="invalid-feedback">비밀번호를 다시 입력해 주세요.</div>
                     </div>
                   </div>
                 </div>
@@ -105,15 +105,15 @@
                   <div class="row">
                     <div class="col-4">
                       <input type="number" class="form-control" id="birthYear" placeholder="생년" oninput="handleOnInput(this, 4)" required />
-                      <div class="invalid-feedback">연도를 입력해 주세요.</div>
+                      <div class="invalid-feedback">네 자리 연도를 입력해 주세요.</div>
                     </div>
                     <div class="col-4">
                       <input type="number" class="form-control" id="birthMonth" placeholder="월" oninput="handleOnInput(this, 2)" required />
-                      <div class="invalid-feedback">달을 입력해 주세요.</div>
+                      <div class="invalid-feedback">두 자리 달을 입력해 주세요.</div>
                     </div>
                     <div class="col-4">
                       <input type="number" class="form-control" id="birthDay" placeholder="일" oninput="handleOnInput(this, 2)" required />
-                      <div class="invalid-feedback">일을 입력해 주세요.</div>
+                      <div class="invalid-feedback">두 자리 날짜를 입력해 주세요.</div>
                     </div>
                   </div>
                 </div>
@@ -331,10 +331,6 @@
 				el.value = el.value.substr(0, maxlength);
 			}
 		}
-
-		$('.modal').on('hidden.bs.modal', function (e) {
-			$(this).find('form')[0].reset();
-		});
 	</script>
 </body>
 
