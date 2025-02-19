@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="Codescandy" name="author">
 	<title>Boardgame Mania - 마이페이지(쇼핑 정보)</title>
-
 	<!-- Favicon icon-->
 	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
@@ -197,7 +196,6 @@
 								</div>
 							</div>
 						</div> -->
-						
 						<div>
 							<ul class="navbar-nav align-items-center">
 								<li class="nav-item w-100 w-lg-auto">
@@ -724,7 +722,6 @@
 	<main>
 		<!-- section -->
 		<section>
-			<!-- container -->
 			<div class="container">
 				<!-- row -->
 				<div class="row">
@@ -741,6 +738,7 @@
 							</button>
 						</div>
 					</div>
+					<!-- col -->
 					<div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
 						<div class="pt-10 pe-lg-10">
 							<ul class="nav flex-column nav-pills nav-pills-dark">
@@ -757,7 +755,7 @@
 										</li>
 										<!-- nav item -->
 										<li class="nav-item">
-											<a class="nav-link" aria-current="page" href="account-purchase.html">
+											<a class="nav-link active" aria-current="page" href="account-purchase.html">
 												<i class="feather-icon icon-shopping-bag me-2"></i>
 												구매 내역
 											</a>
@@ -771,7 +769,7 @@
 										</li>
 										<!-- nav item -->
 										<li class="nav-item">
-											<a class="nav-link active" href="account-payment-method.html">
+											<a class="nav-link" href="account-payment-method.html">
 												<i class="feather-icon icon-credit-card me-2"></i>
 												지불 수단
 											</a>
@@ -852,115 +850,195 @@
 					<div class="col-lg-9 col-md-8 col-12">
 						<div class="py-6 p-md-6 p-lg-10">
 							<!-- heading -->
-							<div class="d-flex justify-content-between mb-6 align-items-center">
-								<h2 class="mb-0">Payment Methods</h2>
-								<a href="#" class="btn btn-outline-primary" data-bs-toggle="modal"
-									data-bs-target="#paymentModal">Add Payment</a>
+							<h2 class="mb-6">Your Orders</h2>
+
+							<div class="table-responsive-xxl border-0">
+								<!-- Table -->
+								<table class="table mb-0 text-nowrap table-centered">
+									<!-- Table Head -->
+									<thead class="bg-light">
+										<tr>
+											<th>&nbsp;</th>
+											<th>Product</th>
+											<th>Order</th>
+											<th>Date</th>
+											<th>Items</th>
+											<th>Status</th>
+											<th>Amount</th>
+
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- Table body -->
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-1.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="fw-semibold text-inherit">
+													<h6 class="mb-0">Haldiram's Nagpur Aloo Bhujia</h6>
+												</a>
+												<span><small class="text-muted">400g</small></span>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#14899</a>
+											</td>
+											<td class="align-middle border-top-0">March 5, 2023</td>
+											<td class="align-middle border-top-0">1</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-warning">Processing</span>
+											</td>
+											<td class="align-middle border-top-0">$15.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-2.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="fw-semibold text-inherit">
+													<h6 class="mb-0">Nutri Choise Biscuit</h6>
+												</a>
+												<span><small class="text-muted">2 Pkt</small></span>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#14658</a>
+											</td>
+											<td class="align-middle border-top-0">July 9, 2023</td>
+											<td class="align-middle border-top-0">2</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-success">Completed</span>
+											</td>
+											<td class="align-middle border-top-0">$45.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-3.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">
+													<h6 class="mb-0">Cadbury Dairy Milk 5 Star Bites</h6>
+													<span><small class="text-muted">202 g</small></span>
+												</a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#13778</a>
+											</td>
+											<td class="align-middle border-top-0">Oct 03, 2023</td>
+											<td class="align-middle border-top-0">4</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-success">Completed</span>
+											</td>
+											<td class="align-middle border-top-0">$99.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-4.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="fw-semibold text-inherit">
+													<h6 class="mb-0">Onion Flavour Potato</h6>
+												</a>
+												<span><small class="text-muted">100 g</small></span>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#13746</a>
+											</td>
+											<td class="align-middle border-top-0">March 5, 2023</td>
+											<td class="align-middle border-top-0">1</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-success">Completed</span>
+											</td>
+											<td class="align-middle border-top-0">$12.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-5.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="fw-semibold text-inherit">
+													<h6 class="mb-0">Salted Instant Popcorn</h6>
+												</a>
+												<span><small class="text-muted">500 g</small></span>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#13566</a>
+											</td>
+											<td class="align-middle border-top-0">July 9, 2023</td>
+											<td class="align-middle border-top-0">2</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-danger">Cancel</span>
+											</td>
+											<td class="align-middle border-top-0">$6.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+										<tr>
+											<td class="align-middle border-top-0 w-0">
+												<a href="#"><img src="../assets/images/products/product-img-6.jpg"
+														alt="Ecommerce" class="icon-shape icon-xl" /></a>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="fw-semibold text-inherit">
+													<h6 class="mb-0">Blueberry Greek Yogurt</h6>
+												</a>
+												<span><small class="text-muted">500 g</small></span>
+											</td>
+											<td class="align-middle border-top-0">
+												<a href="#" class="text-inherit">#12094</a>
+											</td>
+											<td class="align-middle border-top-0">Oct 03, 2023</td>
+											<td class="align-middle border-top-0">4</td>
+											<td class="align-middle border-top-0">
+												<span class="badge bg-success">Completed</span>
+											</td>
+											<td class="align-middle border-top-0">$18.00</td>
+											<td class="text-muted align-middle border-top-0">
+												<a href="#" class="text-inherit" data-bs-toggle="tooltip"
+													data-bs-placement="top" data-bs-title="View"><i
+														class="feather-icon icon-eye"></i></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<ul class="list-group list-group-flush">
-								<!-- List group item -->
-								<li class="list-group-item py-5 px-0">
-									<div class="d-flex justify-content-between">
-										<div class="d-flex">
-											<!-- img -->
-											<img src="../assets/images/svg-graphics/visa.svg" alt="" />
-											<!-- text -->
-											<div class="ms-4">
-												<h5 class="mb-0 h6 h6">**** 1234</h5>
-												<p class="mb-0 small">Expires in 10/2023</p>
-											</div>
-										</div>
-										<div>
-											<!-- button -->
-											<a href="#" class="btn btn-outline-gray-400 disabled btn-sm">Remove</a>
-										</div>
-									</div>
-								</li>
-								<!-- List group item -->
-								<li class="list-group-item px-0 py-5">
-									<div class="d-flex justify-content-between">
-										<div class="d-flex">
-											<!-- img -->
-											<img src="../assets/images/svg-graphics/mastercard.svg" alt=""
-												class="me-3" />
-											<div>
-												<h5 class="mb-0 h6">Mastercard ending in 1234</h5>
-												<p class="mb-0 small">Expires in 03/2026</p>
-											</div>
-										</div>
-										<div>
-											<!-- button-->
-											<a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Remove</a>
-										</div>
-									</div>
-								</li>
-								<!-- List group item -->
-								<li class="list-group-item px-0 py-5">
-									<div class="d-flex justify-content-between">
-										<div class="d-flex">
-											<!-- img -->
-											<img src="../assets/images/svg-graphics/discover.svg" alt="" class="me-3" />
-											<div>
-												<!-- text -->
-												<h5 class="mb-0 h6">Discover ending in 1234</h5>
-												<p class="mb-0 small">
-													Expires in 07/2020
-													<span class="badge bg-warning text-dark">This card is
-														expired.</span>
-												</p>
-											</div>
-										</div>
-										<div>
-											<!-- btn -->
-											<a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Remove</a>
-										</div>
-									</div>
-								</li>
-								<!-- List group item -->
-								<li class="list-group-item px-0 py-5">
-									<div class="d-flex justify-content-between">
-										<div class="d-flex">
-											<!-- img -->
-											<img src="../assets/images/svg-graphics/americanexpress.svg" alt=""
-												class="me-3" />
-											<!-- text -->
-											<div>
-												<h5 class="mb-0 h6">American Express ending in 1234</h5>
-												<p class="mb-0 small">Expires in 12/2021</p>
-											</div>
-										</div>
-										<div>
-											<!-- btn -->
-											<a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Remove</a>
-										</div>
-									</div>
-								</li>
-								<!-- List group item -->
-								<li class="list-group-item px-0 py-5 border-bottom">
-									<div class="d-flex justify-content-between">
-										<div class="d-flex">
-											<!-- img -->
-											<img src="../assets/images/svg-graphics/paypal.svg" alt="" class="me-3" />
-											<div>
-												<!-- text -->
-												<h5 class="mb-0 h6">Paypal Express ending in 1234</h5>
-												<p class="mb-0 small">Expires in 10/2021</p>
-											</div>
-										</div>
-										<div>
-											<!-- btn -->
-											<a href="#" class="btn btn-outline-gray-400 text-muted btn-sm">Remove</a>
-										</div>
-									</div>
-								</li>
-							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+
 	<!-- modal -->
+
 	<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAccount" aria-labelledby="offcanvasAccountLabel">
 		<!-- offcanvas header -->
 		<div class="offcanvas-header">
@@ -972,7 +1050,7 @@
 			<ul class="nav flex-column nav-pills nav-pills-dark">
 				<!-- nav item -->
 				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="account-orders.html">
+					<a class="nav-link active" aria-current="page" href="account-orders.html">
 						<i class="feather-icon icon-shopping-bag me-2"></i>
 						Your Orders
 					</a>
@@ -993,7 +1071,7 @@
 				</li>
 				<!-- nav item -->
 				<li class="nav-item">
-					<a class="nav-link active" href="account-payment-method.html">
+					<a class="nav-link" href="account-payment-method.html">
 						<i class="feather-icon icon-credit-card me-2"></i>
 						Payment Method
 					</a>
@@ -1008,7 +1086,7 @@
 			</ul>
 			<hr class="my-6" />
 			<div>
-				<!-- navs -->
+				<!-- nav  -->
 				<ul class="nav flex-column nav-pills nav-pills-dark">
 					<!-- nav item -->
 					<li class="nav-item">
@@ -1021,126 +1099,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Payment Modal -->
-	<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-			<!-- modal content -->
-			<div class="modal-content">
-				<!-- modal header -->
-				<div class="modal-header align-items-center d-flex">
-					<h5 class="modal-title" id="paymentModalLabel">Add New Payment Method</h5>
-					<!-- button -->
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<!-- Modal body -->
-				<div class="modal-body">
-					<div>
-						<!-- Form -->
-						<form class="row mb-4 needs-validation" novalidate>
-							<div class="mb-3 col-12 col-md-12 mb-4">
-								<h5 class="mb-3">Credit / Debit card</h5>
-								<!-- Radio button -->
-								<div class="d-inline-flex">
-									<div class="form-check me-2">
-										<input type="radio" class="form-check-input" id="paymentRadioOne"
-											name="paymentRadioOne" required />
-										<label class="form-check-label" for="paymentRadioOne"><img
-												src="../assets/images/payment/american-express.svg" alt="" /></label>
-									</div>
-									<!-- Radio button -->
-									<div class="form-check me-2">
-										<input type="radio" id="paymentRadioTwo" name="paymentRadioOne"
-											class="form-check-input" />
-										<label class="form-check-label" for="paymentRadioTwo"><img
-												src="../assets/images/payment/mastercard.svg" alt="" /></label>
-									</div>
 
-									<!-- Radio button -->
-									<div class="form-check">
-										<input type="radio" id="paymentRadioFour" name="paymentRadioOne"
-											class="form-check-input" />
-										<label class="form-check-label" for="paymentRadioFour"><img
-												src="../assets/images/payment/visa.svg" alt="" /></label>
-									</div>
-								</div>
-							</div>
-							<!-- Name on card -->
-							<div class="mb-3 col-12 col-md-4">
-								<label for="nameoncard" class="form-label">Name on card</label>
-								<input id="nameoncard" type="text" class="form-control" name="nameoncard"
-									placeholder="Name" required />
-								<div class="invalid-feedback">Please enter name.</div>
-							</div>
-							<!-- Month -->
-							<div class="mb-3 col-12 col-md-4">
-								<label for="validationCustomMonth" class="form-label">Month</label>
-								<select class="form-select" id="validationCustomMonth" required>
-									<option value="">Month</option>
-									<option value="Jan">Jan</option>
-									<option value="Feb">Feb</option>
-									<option value="Mar">Mar</option>
-									<option value="Apr">Apr</option>
-									<option value="May">May</option>
-									<option value="June">June</option>
-									<option value="July">July</option>
-									<option value="Aug">Aug</option>
-									<option value="Sep">Sep</option>
-									<option value="Oct">Oct</option>
-									<option value="Nov">Nov</option>
-									<option value="Dec">Dec</option>
-								</select>
-								<div class="invalid-feedback">Please select month.</div>
-							</div>
-							<!-- Year -->
-							<div class="mb-3 col-12 col-md-4">
-								<label for="validationCustomYear" class="form-label">Year</label>
-								<select class="form-select" id="validationCustomYear" required>
-									<option value="">Year</option>
-									<option value="June">2022</option>
-									<option value="July">2023</option>
-									<option value="August">2024</option>
-									<option value="Sep">2025</option>
-									<option value="Oct">2026</option>
-								</select>
-								<div class="invalid-feedback">Please select year.</div>
-							</div>
-							<!-- Card number -->
-							<div class="mb-3 col-md-8 col-12">
-								<label for="card-mask" class="form-label">Card Number</label>
-								<input type="text" class="form-control" id="card-mask" placeholder="xxxx-xxxx-xxxx-xxxx"
-									required />
-								<div class="invalid-feedback">Please enter card number.</div>
-							</div>
-							<!-- CVV -->
-							<div class="mb-3 col-md-4 col-12">
-								<div class="mb-3">
-									<label for="digit-mask" class="form-label">
-										CVV Code
-										<i class="fe fe-help-circle ms-1" data-bs-toggle="tooltip" data-placement="top"
-											title="A 3 - digit number, typically printed on the back of a card."></i>
-									</label>
-									<input type="password" class="form-control" name="cvv" id="digit-mask"
-										placeholder="xxx" maxlength="3" required />
-									<div class="invalid-feedback">Please enter cvv.</div>
-								</div>
-							</div>
-							<!-- Button -->
-							<div class="col-md-6 col-12">
-								<button class="btn btn-primary" type="submit">Add New Card</button>
-								<button class="btn btn-outline-gray-400 text-muted" type="submit"
-									data-bs-dismiss="modal">Close</button>
-							</div>
-						</form>
-						<span>
-							<strong>Note:</strong>
-							that you can later remove your card at the account setting page.
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!-- Footer -->
 	<!-- footer -->
 	<footer class="footer">
@@ -1309,7 +1268,6 @@
 		</div>
 	</footer>
 	<!-- Javascript-->
-
 	<!-- Libs JS -->
 	<!-- <script src="../assets/libs/jquery/dist/jquery.min.js"></script> -->
 	<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -1318,10 +1276,6 @@
 	<!-- Theme JS -->
 	<script src="../assets/js/theme.min.js"></script>
 
-
-	<script src="../assets/libs/imask/dist/imask.min.js"></script>
-	<script src="../assets/js/vendors/inputmask.js"></script>
-	<script src="../assets/js/vendors/validation.js"></script>
 </body>
 
 </html>
