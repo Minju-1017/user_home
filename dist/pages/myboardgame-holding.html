@@ -56,7 +56,7 @@
 				<div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
 					<div class="list-inline">
 						<div class="list-inline-item me-5">
-							<a href="../pages/shop-wishlist.html" class="text-muted position-relative">
+							<a href="../pages/myboardgame-wish.html" class="text-muted position-relative">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
 									stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 									class="feather feather-heart">
@@ -71,16 +71,6 @@
 							</a>
 						</div>
 						<div class="list-inline-item me-5">
-							<a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-									stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-									class="feather feather-user">
-									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-									<circle cx="12" cy="7" r="4"></circle>
-								</svg>
-							</a>
-						</div>
-						<div class="list-inline-item me-5 me-lg-0">
 							<a class="text-muted position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
 								href="#offcanvasExample" role="button" aria-controls="offcanvasRight">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -94,6 +84,17 @@
 									1
 									<span class="visually-hidden">unread messages</span>
 								</span>
+							</a>
+						</div>
+						<div class="list-inline-item me-5 me-lg-0">
+							<a href="./signup.html" class="text-muted">
+							<!-- <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal"> -->
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+									stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+									class="feather feather-user">
+									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+									<circle cx="12" cy="7" r="4"></circle>
+								</svg>
 							</a>
 						</div>
 						<div class="list-inline-item d-inline-block d-lg-none">
@@ -210,8 +211,8 @@
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 									aria-expanded="false">내 보드게임</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="./myboardgame-holding.html">보유 목록</a></li>
-									<li><a class="dropdown-item" href="./myboardgame-wish.html">위시 목록</a></li>
+									<li><a class="dropdown-item" href="./myboardgame-holding.html">보유 게임</a></li>
+									<li><a class="dropdown-item" href="./myboardgame-wish.html">위시 리스트</a></li>
 								</ul>
 							</li>
 							<li class="nav-item dropdown w-100 w-lg-auto">
@@ -230,7 +231,6 @@
 								<ul class="dropdown-menu">
 									<li><a class="dropdown-item" href="./account-settings.html">기본 정보 변경</a></li>
 									<li><a class="dropdown-item" href="./account-settings-pwd.html">비밀번호 변경</a></li>
-									<li><a class="dropdown-item" href="./account-notification.html">알림 설정</a></li>
 									<li><a class="dropdown-item" href="./account-settings-withdrawal.html">회원 탈퇴</a>
 								</ul>
 							</li>
@@ -656,7 +656,6 @@
 	</div>
 </div>
 
-<script src="../assets/js/vendors/validation.js"></script>
     <main>
         <!-- section -->
         <section class="mt-8 mb-14">
@@ -666,12 +665,12 @@
                   	<div class="col-lg-12">
                      	<div class="mb-8">
                         	<!-- heading -->
-                        	<h2 class="mb-1">보유 목록</h2>
+                        	<h2 class="mb-1">보유 게임</h2>
                      	</div>
                     <div>
 						<!-- table -->
 						<div class="table-responsive">
-							<table class="table text-nowrap table-with-checkbox" style="font-size: 12px;">
+							<table class="table text-nowrap table-with-checkbox text-center table-hover" style="font-size: 13px;">
 								<thead class="table-light">
 									<tr>
 										<th>
@@ -688,13 +687,12 @@
 										<th>인원</th>
 										<th>최적인원</th>
 										<th>소요시간</th>
-										<th>사용연령</th>
-										<th>공식판매사</th>
-										<th>전체순위</th>
+										<th>순위</th>
 										<th>평점</th>
 										<th>난이도</th>
 										<th>프로텍터</th>
 										<th>코인캡슐</th>
+										<th>타사이트</th>
 										<th>메모</th>
 										<th>삭제</th>
 									</tr>
@@ -711,7 +709,7 @@
 											</div>
 										</td>
 										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
+											<a href="#"><img src="../assets/images/products/product-img-1.jpg" class="icon-shape icon-xxl" alt="" /></a>
 										</td>
 										<td class="align-middle">
 											<div>
@@ -721,13 +719,15 @@
 										<td class="align-middle">1-4명</td>
 										<td class="align-middle">2인</td>
 										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
 										<td class="align-middle">243</td>
 										<td class="align-middle">6.38</td>
 										<td class="align-middle">2.19</td>
 										<td class="align-middle">없음</td>
 										<td class="align-middle">없음</td>
+										<td class="align-middle" style="font-size: 12px;">
+											<a href="https://boardlife.co.kr/bbs_detail.php?bbs_num=12473&tb=boardgame_strategy" target="_blank">BoardLife</a><br>
+											<a href="https://www.boardgamegeek.com/boardgame/283155/calico" target="_blank">BoardgameGeek</a><br>
+										</td>
 										<td class="align-middle">
 											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
 												<i class="feather-icon icon-message-square"></i>
@@ -750,23 +750,25 @@
 											</div>
 										</td>
 										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
+											<a href="#"><img src="../assets/images/products/product-img-2.jpg" class="icon-shape icon-xxl" alt="" /></a>
 										</td>
 										<td class="align-middle">
 											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
+												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캐스캐디아</a></h5>
 											</div>
 										</td>
 										<td class="align-middle">1-4명</td>
 										<td class="align-middle">2인</td>
 										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
+										<td class="align-middle">61</td>
+										<td class="align-middle">7.04</td>
+										<td class="align-middle">1.86</td>
+										<td class="align-middle">팝콘블라<br>70120</td>
 										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
+										<td class="align-middle" style="font-size: 12px;">
+											<a href="https://boardlife.co.kr/bbs_detail.php?bbs_num=13348&tb=boardgame_strategy" target="_blank">BoardLife</a><br>
+											<a href="https://boardgamegeek.com/boardgame/295947/cascadia" target="_blank">BoardgameGeek</a><br>
+										</td>
 										<td class="align-middle">
 											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
 												<i class="feather-icon icon-message-square"></i>
@@ -789,335 +791,25 @@
 											</div>
 										</td>
 										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
+											<a href="#"><img src="../assets/images/products/product-img-3.png" class="icon-shape icon-xxl" alt="" /></a>
 										</td>
 										<td class="align-middle">
 											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
+												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">크라스<br>카리어트</a></h5>
 											</div>
 										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
+										<td class="align-middle">3-5명</td>
+										<td class="align-middle">4인</td>
+										<td class="align-middle">30분</td>
+										<td class="align-middle">203</td>
+										<td class="align-middle">6.46</td>
+										<td class="align-middle">1.42</td>
+										<td class="align-middle">팝콘블라<br>5687</td>
 										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
+										<td class="align-middle" style="font-size: 12px;">
+											<a href="https://boardlife.co.kr/bbs_detail.php?bbs_num=10640&tb=boardgame_strategy" target="_blank">BoardLife</a><br>
+											<a href="https://boardgamegeek.com/boardgame/243430/dealt" target="_blank">BoardgameGeek</a><br>
 										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
-												<i class="feather-icon icon-message-square"></i>
-											</a>
-										</td>
-										<td class="align-middle">
-											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-												<i class="feather-icon icon-trash-2"></i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td class="align-middle">
-											<!-- form check -->
-											<div class="form-check">
-												<!-- input -->
-												<input class="form-check-input" type="checkbox" value="" id="chechboxTwo" />
-												<!-- label -->
-												<label class="form-check-label" for="chechboxTwo"></label>
-											</div>
-										</td>
-										<td class="align-middle">
-											<a href="#"><img src="../assets/images/products/product-img-18.jpg" class="icon-shape icon-xxl" alt="" /></a>
-										</td>
-										<td class="align-middle">
-											<div>
-												<h5 class="fs-6 mb-0"><a href="#" class="text-inherit">캘리코</a></h5>
-											</div>
-										</td>
-										<td class="align-middle">1-4명</td>
-										<td class="align-middle">2인</td>
-										<td class="align-middle">30-45분</td>
-										<td class="align-middle">10세 이상</td>
-										<td class="align-middle">팝콘에듀</td>
-										<td class="align-middle">243</td>
-										<td class="align-middle">6.38</td>
-										<td class="align-middle">2.19</td>
-										<td class="align-middle">없음</td>
-										<td class="align-middle">없음</td>
 										<td class="align-middle">
 											<a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="">
 												<i class="feather-icon icon-message-square"></i>
