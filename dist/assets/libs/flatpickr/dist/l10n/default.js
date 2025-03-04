@@ -6,7 +6,7 @@
 
   var english = {
       weekdays: {
-          shorthand: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          shorthand: ["가가가", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
           longhand: [
               "Sunday",
               "Monday",

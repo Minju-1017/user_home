@@ -735,8 +735,8 @@
 												<!-- input -->
 												<div class="mb-3">
 													<label for="formSigninBirth" class="form-label">생년월일</label>
-													<input type="text" class="form-control" id="formSigninBirth" 
-														placeholder="2000/01/01" value="2000-10-17" required />
+													<input type="text" class="form-control flatpickr" id="formSigninBirth" 
+														placeholder="2000/01/01" value="17/10/2000" required />
 													<div class="invalid-feedback">생년월일을 입력해 주세요.</div>
 												</div>
 												<div class="mb-5">
@@ -993,14 +993,12 @@
 		<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 		<!-- Theme JS -->
-		<script src="../assets/js/theme.min.js"></script>
+		<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
 
 		<script src="../assets/js/vendors/validation.js"></script>
-
 		<script src="../assets/js/vendors/password.js"></script>
 
-		<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-		<script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+		<script src="../assets/js/theme.min.js"></script>
 
 		<!-- <script type="text/javascript">
 			function handleOnInput(el, maxlength) {
@@ -1009,12 +1007,6 @@
 				}
 			}
 		</script> -->
-
-		<script>
-			var fp = flatpickr(document.getElementById("formSigninBirth"), {
-				"locale": "ko"
-			});
-		</script>
 	</body>
 
 </html>

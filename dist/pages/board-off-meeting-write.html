@@ -632,50 +632,24 @@
 												<input type="text" class="form-control" id="formPlace" required />
 												<div class="invalid-feedback">모임 장소를 입력해 주세요.</div>
 											</div>
-											<div class="mb-3">
-												<label class="form-label" for="formDate">날짜</label>
-												<input type="text" class="form-control flatpickr" id="formDate" placeholder="yyyy/mm/dd" required />
-												<div class="invalid-feedback">모임 날짜를 지정해 주세요.</div>
-											</div>
-											<div class="mb-3">
-												<label for="formPlace" class="form-label">시간</label>
-												<input type="text" class="form-control" id="formPlace" required />
-												<div class="invalid-feedback">모임 장소를 입력해 주세요.</div>
-											</div>
 											<!-- input -->
-											<div class="mb-3">
-												<label class="form-label">생년월일</label>
-												<div class="row row-cols-1 row-cols-lg-2 row-cols-lg-3">
-													<div calss="col">
-														<input type="number" class="form-control" id="birthYear" placeholder="생년" value="2000" oninput="handleOnInput(this, 4)" required />
-														<div class="invalid-feedback">네 자리 연도를 입력해 주세요.</div>
-													</div>
-													<div calss="col">
-														<input type="number" class="form-control" id="birthMonth" placeholder="월" value="10" oninput="handleOnInput(this, 2)" required />
-														<div class="invalid-feedback">두 자리 달을 입력해 주세요.</div>
-													</div>
-													<div calss="col">
-														<input type="number" class="form-control" id="birthDay" placeholder="일" value="17" oninput="handleOnInput(this, 2)" required />
-														<div class="invalid-feedback">두 자리 날짜를 입력해 주세요.</div>
-													</div>
-												</div>
-											</div>
 											<div class="mb-5">
-												<label class="form-label">성별</label>
-												<div class="row">
-													<div class="col-3">
-														<input class="form-check-input" type="radio" name="flexRadioDefault" id="maleRadio" />
-														<label class="form-check-label text-dark" for="maleRadio">남</label>
+												<label class="form-label">일시</label>
+												<div class="row row-cols-1 row-cols-lg-2">
+													<div calss="col">
+														<input type="text" class="form-control flatpickr" id="formDate" placeholder="일/월/년 예) 31/12/2025" required />
+														<div class="invalid-feedback">모임 날짜를 지정해 주세요.</div>
 													</div>
-													<div class="col-3">
-														<input class="form-check-input" type="radio" name="flexRadioDefault" id="femaleRadio" checked />
-														<label class="form-check-label text-dark" for="femaleRadio">여</label>
+													<div calss="col">
+														<input type="text" class="form-control" id="formPlace"  placeholder="예) 14:00"required />
+												<div class="invalid-feedback">모임 시간을 지정해 주세요.</div>
 													</div>
 												</div>
 											</div>
 											<!-- button -->
 											<div class="mb-3">
-												<button class="btn btn-primary" type="submit">저장</button>
+												<button class="btn btn-primary" type="submit">모임 만들기</button>&nbsp;
+												<a href="./board-off-meeting.html" class="btn btn-light">취소</a>
 											</div>
 										</form>
 									</div>
@@ -855,17 +829,17 @@
 		<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 		<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-		<script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+		<!-- <script src="../assets/libs/flatpickr/dist/l10n/ko.js"></script> -->
 
 		<!-- Theme JS -->
 		<script src="../assets/js/theme.min.js"></script>
 
 		<script src="../assets/js/vendors/validation.js"></script>
 
-		<script>
+		<!-- <script>
 			var fp = flatpickr(document.getElementById("formDate"), {
 				"locale": "ko"
 			});
-		</script>
+		</script> -->
    	</body>
 </html>
