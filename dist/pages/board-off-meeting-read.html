@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-	<head>
+   	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta content="Codescandy" name="author">
-		<title>Boardgame Mania - 내 쇼핑</title>
-		<!-- Favicon icon-->
+      	<title>Boardgame Mania - 오프라인 모임</title>
+      	<!-- Favicon icon-->
 		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
 		<!-- Libs CSS -->
@@ -17,10 +16,10 @@
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/css/theme.min.css">
-	</head>
+   	</head>
 
-	<body>
-		<!-- navbar -->
+   	<body>
+      	<!-- navbar -->
 		<div class="border-bottom">
 			<div class="py-5">
 				<div class="container">
@@ -40,15 +39,14 @@
 						<div class="col-lg-2 col-xxl-2 text-end col-md-6 col-7">
 							<div class="list-inline">
 								<div class="list-inline-item me-5">
-									<a href="../pages/myboardgame-wish.html" class="text-muted position-relative">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="feather feather-heart">
+									<a href="./myboardgame-wish.html" class="text-muted position-relative">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+											stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-heart">
 											<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
 											</path>
 										</svg>
-										<span
-											class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+										<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
 											3
 											<span class="visually-hidden">unread messages</span>
 										</span>
@@ -56,9 +54,10 @@
 								</div>
 								<div class="list-inline-item me-5 me-lg-0">
 									<a href="./signup.html" class="text-muted">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-											fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-											stroke-linejoin="round" class="feather feather-user">
+									<!-- <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal"> -->
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+											stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+											class="feather feather-user">
 											<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
 											<circle cx="12" cy="7" r="4"></circle>
 										</svg>
@@ -67,8 +66,7 @@
 								<div class="list-inline-item d-inline-block d-lg-none">
 									<!-- Button -->
 									<button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
-										data-bs-target="#navbar-default" aria-controls="navbar-default"
-										aria-label="Toggle navigation">
+										data-bs-target="#navbar-default" aria-controls="navbar-default" aria-label="Toggle navigation">
 										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
 											class="bi bi-text-indent-left text-primary" viewBox="0 0 16 16">
 											<path
@@ -86,8 +84,8 @@
 				<div class="container">
 					<div class="offcanvas offcanvas-start" tabindex="-1" id="navbar-default" aria-labelledby="navbar-defaultLabel">
 						<div class="offcanvas-body">
-								<div>
-									<ul class="navbar-nav align-items-center">
+							<div>
+								<ul class="navbar-nav align-items-center">
 									<li class="nav-item w-100 w-lg-auto">
 										<a class="nav-link" href="../index.html">홈</a>
 									</li>
@@ -145,244 +143,181 @@
 			</nav>
 		</div>
 
-		<main>
-			<!-- section -->
-			<section>
-				<!-- container -->
+      	<main>
+         	<!-- section -->
+			<section class="my-lg-8 my-8">
 				<div class="container">
-					<!-- row -->
 					<div class="row">
-						<!-- col -->
-						<div class="col-lg-3 col-md-4 col-12 border-end d-none d-md-block">
-							<div class="pt-10 pe-lg-10">
-								<ul class="nav flex-column nav-pills nav-pills-dark">
-									<!-- nav item -->
-									<li class="nav-item">
-										<ul class="nav flex-column nav-pills nav-pills-dark">
-											<!-- nav item -->
-											<li class="nav-item">
-												<a class="nav-link" aria-current="page" href="myshopping-sales.html">
-													<i class="feather-icon icon-truck me-2"></i>
-													판매 내역
-												</a>
-											</li>
-											<!-- nav item -->
-											<li class="nav-item">
-												<a class="nav-link" aria-current="page" href="myshopping-purchase.html">
-													<i class="feather-icon icon-shopping-bag me-2"></i>
-													구매 내역
-												</a>
-											</li>
-											<!-- nav item -->
-											<li class="nav-item">
-												<a class="nav-link active" href="myshopping-address.html">
-													<i class="feather-icon icon-map-pin me-2"></i>
-													배송지 주소
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
+						<div class="col-md-8 offset-md-2">
+							<div class="card">
+								<div class="card-body">
+									<div class="mt-4 mb-4">
+										<h4 class="mb-0">게임해요!!!!!!</h4>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-5">
+										<div class="d-flex align-items-center">
+											<img src="../assets/images/avatar/avatar-4.jpg" alt=""
+												class="rounded-circle avatar-md" />
+											<div class="ms-2 lh-1">
+												<h6 class="mb-0">김개똥</h6>
+												<span class="text-secondary small">2025-02-25 23:00</span>&nbsp;&nbsp;
+												<span class="text-secondary small">조회 33</span>
+											</div>
+										</div>
+										<div>
+											<!-- social -->
+											<a href="#" class="ms-2 text-muted"><i class="bi bi-chat-dots fs-6"></i> 댓글 22</a>
+											<a href="#" class="ms-2 text-muted"><i class="bi bi-link-45deg fs-6"></i> URL 복사</a>
+										</div>
+									</div>
+									<hr class="mt-4 mb-5" />
+									<div>
+										<table class="table table-borderless mb-0">
+											<tbody>
+												<tr>
+													<th style="text-align: right;" width="110px">장소</th>
+													<td>건대입구 보드라이프</td>
+												</tr>
+												<tr>
+													<th style="text-align: right;" >일시</th>
+													<td>2025-03-01 14:00</td>
+												</tr>
+												<tr>
+													<th style="text-align: right;" >참여자</th>
+													<td><a href="#" data-bs-toggle="tooltip" title="홍말자, 김미자, 홍길동">3명</a></td> <!-- TODO: 참여자 팝업 -->
+												</tr>
+												<tr>
+													<th style="text-align: right;" >최대인원</th>
+													<td>10명</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<hr class="mt-4 mb-5" />
+									<!-- text -->
+									<div class="mb-8">
+										<p>
+											게임해요!!!
+										</p>
+									</div>
+									<div class="d-flex justify-content-between align-items-center mb-1">
+										<div>
+											<!-- social -->
+											<a href="#" class="ms-2 text-muted"><i class="bi bi-chat-dots fs-6"></i> 댓글 22</a>
+										</div>
+										<div>
+											<!-- social -->
+											<a href="#" class="ms-2 text-muted"><i class="bi bi-link-45deg fs-6"></i> URL 복사</a>
+										</div>
+									</div>
+									<hr class="mt-4 mb-5" />
+									<div class="d-flex align-items-center mb-5">
+										<div class="d-flex align-items-center">
+											<img src="../assets/images/avatar/avatar-1.jpg" alt=""
+												class="rounded-circle avatar-md" />
+											<div class="ms-2 lh-1">
+												<h6 class="mb-0">홍미자</h6>
+												<div class="mt-1">감사합니다!</div>
+												<div class="mt-1">
+													<span class="text-secondary small mb-5">
+														2025-02-25 23:00
+														<a href="#" class="ms-2 text-muted">답글 쓰기</a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-10 offset-md-2">
+										<hr class="mt-4 mb-5" />
+										<div class="d-flex align-items-center mb-5">
+											<div class="d-flex align-items-center">
+												<img src="../assets/images/avatar/avatar-2.jpg" alt=""
+													class="rounded-circle avatar-md" />
+												<div class="ms-2 lh-1">
+													<h6 class="mb-0">김말자</h6>
+													<div class="mt-1">감사합니다!</div>
+													<div class="mt-1">
+														<span class="text-secondary small mb-5">
+															2025-02-25 23:00
+															<a href="#" class="ms-2 text-muted">답글 쓰기</a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr class="mt-4 mb-5" />
+									<div class="d-flex align-items-center mb-5">
+										<div class="d-flex align-items-center">
+											<img src="../assets/images/avatar/avatar-1.jpg" alt=""
+												class="rounded-circle avatar-md" />
+											<div class="ms-2 lh-1">
+												<h6 class="mb-0">홍미자</h6>
+												<div class="mt-1">감사합니다!</div>
+												<div class="mt-1">
+													<span class="text-secondary small mb-5">
+														2025-02-25 23:00
+														<a href="#" class="ms-2 text-muted">답글 쓰기</a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr class="mt-4 mb-5" />
+									<div class="d-flex align-items-center mb-5">
+										<div class="d-flex align-items-center">
+											<img src="../assets/images/avatar/avatar-1.jpg" alt=""
+												class="rounded-circle avatar-md" />
+											<div class="ms-2 lh-1">
+												<h6 class="mb-0">홍미자</h6>
+												<div class="mt-1">감사합니다!</div>
+												<div class="mt-1">
+													<span class="text-secondary small mb-5">
+														2025-02-25 23:00
+														<a href="#" class="ms-2 text-muted">답글 쓰기</a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card">
+										<div class="card-body">
+											<div class="d-flex align-items-center mb-5">
+												<div class="d-flex align-items-center">
+													<img src="../assets/images/avatar/avatar-1.jpg" alt=""
+														class="rounded-circle avatar-md" />
+													<div class="ms-2 lh-1">
+														<h6 class="mb-0">홍미자</h6>
+													</div>
+												</div>
+											</div>
+
+											<textarea class="form-control" id="formContent" rows="1" name="text" placeholder="댓글을 남겨보세요."
+												oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
+												style="resize: none; max-height: 100px; border: none;"></textarea>
+												<div class="mt-1">
+													<span class="text-secondary mb-5">
+														<a href="#" class="ms-2 text-muted">등록</a>
+													</span>
+												</div>
+										</div>
+									</div>
+									<div class="mb-5"></div>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-9 col-md-8 col-12">
-							<div class="py-6 p-md-6 p-lg-10">
-								<div class="d-flex justify-content-between mb-6">
-									<!-- heading -->
-									<h3 class="mb-0">배송지 주소</h3>
-									<!-- button -->
-									<a href="./myshopping-address_add.html" class="btn btn-outline-primary">배송지 등록</a>
-								</div>
-								<div class="row">
-									<!-- col -->
-									<div class="col-xl-5 col-lg-6 col-xxl-4 col-12 mb-4">
-										<!-- form -->
-										<div class="card">
-											<div class="card-body p-6">
-												<div class="mb-4">
-													<label class="text-dark fw-semibold">집</label>
-												</div>
-												<!-- address -->
-												 <!-- nav item -->
-												<p class="mb-2">
-													김개똥
-												</p>
-												<p class="mb-2">
-													01831<br />
-													서울 노원구 공릉로1길 10,<br />
-													(공릉동, 으뜸아파트) 1동 111호
-												</p>
-												<p class="mb-6">
-													010-999-9999
-												</p>
-												<!-- btn -->
-												<a href="#" class="btn btn-info btn-sm">기본 배송지</a>
-												<div class="mt-4">
-													<a href="#" class="text-inherit">수정</a>
-													<a href="#" class="text-danger ms-3" data-bs-toggle="modal"
-														data-bs-target="#deleteModal">삭제</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xk-5 col-lg-6 col-xxl-4 col-12 mb-4">
-										<!-- input -->
-										<div class="card">
-											<div class="card-body p-6">
-												<div class="mb-4">
-													<label class="text-dark fw-semibold">사무실</label>
-												</div>
-												<!-- nav item -->
-												<p class="mb-2">
-													홍길동
-												</p>
-												<p class="mb-2">
-													12345<br />
-													서울 강남구 삼성로777길 33,<br />
-													(삼성동, 대표빌딩) 13층 ABC
-												</p>
-												<p class="mb-6">
-													02-555-8888
-												</p>
-													
-												<!-- link -->
-												<a href="#" class="link-primary">기본 배송지로 설정</a>
-												<div class="mt-4">
-													<a href="#" class="text-inherit">수정</a>
-													<!-- btn -->
-													<a href="#" class="text-danger ms-3" data-bs-toggle="modal"
-														data-bs-target="#deleteModal">삭제</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+
+							<div class="col mt-5" style="text-align: center;">
+								<a href="#" class="btn btn-primary">모임 참여</a>&nbsp; <!-- TODO: 참여한 사람 취소 -->
+								<a href="./board-off-meeting.html" class="btn btn-outline-primary">목록</a>&nbsp;
+								<a href="#" class="btn btn-outline-secondary"><i class="bi bi-arrow-up fs-6"></i> Top</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		</main>
+      	</main>
 
-		<!-- Modal -->
-		<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<!-- modal content -->
-				<div class="modal-content">
-					<!-- modal header -->
-					<div class="modal-header">
-						<h5 class="modal-title" id="deleteModalLabel">배송지 삭제</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<!-- modal body -->
-					<div class="modal-body">
-						<h6>배송지를 정말로 삭제하시겠습니까?</h6>
-						<p class="mb-6">
-							12345
-							<br />
-							서울 강남구 삼성로777길 33,
-							<br />
-							(삼성동, 대표빌딩) 13층 ABC
-							<br />
-							02-555-8888
-						</p>
-					</div>
-					<!-- modal footer -->
-					<div class="modal-footer">
-						<!-- btn -->
-						<button type="button" class="btn btn-outline-gray-400" data-bs-dismiss="modal">취소</button>
-						<button type="button" class="btn btn-danger">삭제</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Modal -->
-		<div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<!-- modal content -->
-				<div class="modal-content">
-					<!-- modal body -->
-					<div class="modal-body p-6">
-						<div class="d-flex justify-content-between mb-5">
-							<div>
-								<!-- heading -->
-								<h5 class="mb-1" id="addAddressModalLabel">배송지 등록</h5>
-								<p class="small mb-0">새로운 배송지를 등록해 주세요.</p>
-							</div>
-							<div>
-								<!-- button -->
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-						</div>
-						<div class="row g-3">
-							<div class="col-12">
-								<input type="text" class="form-control" placeholder="First name" aria-label="First name" required="" />
-							</div>
-							<div class="col-12">
-								<input type="text" class="form-control" placeholder="Address Line 1" />
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- input -->
-								<input type="text" class="form-control" placeholder="Address Line 2" />
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- input -->
-								<input type="text" class="form-control" placeholder="City" />
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- form select -->
-								<select class="form-select">
-									<option selected="">India</option>
-									<option value="1">UK</option>
-									<option value="2">USA</option>
-									<option value="3">UAE</option>
-								</select>
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- form select -->
-								<select class="form-select">
-									<option selected="">Gujarat</option>
-									<option value="1">Northern Ireland</option>
-									<option value="2">Alaska</option>
-									<option value="3">Abu Dhabi</option>
-								</select>
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- input -->
-								<input type="text" class="form-control" placeholder="Zip Code" />
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- input -->
-								<input type="text" class="form-control" placeholder="Business Name" />
-							</div>
-							<!-- col -->
-							<div class="col-12">
-								<!-- form check -->
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-									<label class="form-check-label" for="flexCheckDefault">Set as Default</label>
-								</div>
-							</div>
-							<!-- col -->
-							<div class="col-12 text-end">
-								<button type="button" class="btn btn-outline-primary"
-									data-bs-dismiss="modal">Cancel</button>
-								<button class="btn btn-primary" type="button">Save Address</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- footer -->
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
 				<div class="border-top py-4">
@@ -459,16 +394,25 @@
 			</div>
 		</footer>
 
-		<!-- Javascript-->
-		<!-- Libs JS -->
+      	<!-- Javascript-->
+     	<!-- Libs JS -->
 		<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 		<!-- Theme JS -->
 		<script src="../assets/js/theme.min.js"></script>
 
-		<script src="../assets/js/vendors/validation.js"></script>
-
-	</body>
-
+		<script>
+			const textarea = document.querySelector("textarea");
+			const btn = document.querySelector("button");
+			const text = document.querySelector("p");
+	
+			function clickBtn() {
+				text.innerHTML = textarea.value;
+				textarea.value = '';
+				textarea.style.height = '30px';
+			}
+	
+		</script>
+   	</body>
 </html>
