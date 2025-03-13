@@ -104,7 +104,7 @@
 										<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 											aria-expanded="false">게시판</a>
 										<ul class="dropdown-menu">
-											<li><a class="dropdown-item" href="./board-game-review.html">게임 후기</a></li>
+											<li><a class="dropdown-item" href="./board-review.html">게임 및 모임 후기</a></li>
 											<li><a class="dropdown-item" href="./board-free.html">자유게시판</a></li>
 											<li><a class="dropdown-item" href="./board-off-meeting.html">오프라인 모임</a></li>
 										</ul>
@@ -188,13 +188,14 @@
 														<div class="row row-cols-1 row-cols-lg-2">
 															<div calss="col">
 																<h6 class="h6">날짜<span style="color: red;"> *</span></h6>
-																<input type="text" class="form-control flatpickr" id="formDate" placeholder="일/월/년 예) 31/12/2025" required />
-																<div class="invalid-feedback">모임 날짜를 지정해 주세요.</div>
+																<!-- <input type="text" class="form-control flatpickr" id="formDate" placeholder="일/월/년 예) 31/12/2025" required /> -->
+																<input type="text" class="form-control" id="formDate" placeholder="년/월/일 예) 2000/01/01" required />
+																<div class="invalid-feedback">모임 날짜를 입력해 주세요.</div>
 															</div>
 															<div calss="col">
 																<h6 class="h6">시간<span style="color: red;"> *</span></h6>
 																<input type="text" class="form-control" id="formPlace"  placeholder="예) 14:00"required />
-														<div class="invalid-feedback">모임 시간을 지정해 주세요.</div>
+														<div class="invalid-feedback">모임 시간을 입력해 주세요.</div>
 															</div>
 														</div>
 													</div>
