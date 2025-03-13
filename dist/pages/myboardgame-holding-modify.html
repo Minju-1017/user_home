@@ -5,7 +5,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta content="Codescandy" name="author">
-      	<title>Boardgame Mania - 게임 후기</title>
+      	<title>Boardgame Mania - 내 보드게임</title>
+
+		<link href="../assets/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/libs/@yaireo/tagify/dist/tagify.css" />
+
       	<!-- Favicon icon-->
 		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
@@ -54,7 +58,6 @@
 								</div>
 								<div class="list-inline-item me-5 me-lg-0">
 									<a href="./signup.html" class="text-muted">
-									<!-- <a href="#!" class="text-muted" data-bs-toggle="modal" data-bs-target="#userModal"> -->
 										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 											class="feather feather-user">
@@ -143,169 +146,60 @@
 			</nav>
 		</div>
 
-		<main>
-			<!-- section -->
-			<section class="mt-8 mb-14">
-			   <div class="container">
-					  <!-- row -->
-					  <div class="row">
-						 <div class="col-lg-12">
-							<!-- heading -->
-							<div class="row">
-								<div class="col-lg-8">
-									<!-- form -->
-									<form class="row g-6 needs-validation" novalidate>
-										<div class="card card-lg">
-											<div class="card-body p-6 d-flex flex-column gap-3">
-											<div class="mt-4 mb-4">
-												<h4 class="mb-0">크라스 카리어트 리뷰!!!!!!</h4>
-											</div>
-											<div class="d-flex justify-content-between align-items-center">
-												<div class="d-flex align-items-center">
-													<img src="../assets/images/avatar/avatar-4.jpg" alt=""
-														class="rounded-circle avatar-md" />
-													<div class="ms-2 lh-1">
-														<h6 class="mb-0">김개똥</h6>
-														<span class="text-secondary small">2025-02-25 23:00</span>&nbsp;&nbsp;
-														<span class="text-secondary small">조회 33</span>
+      	<main>
+         	<!-- section -->
+         	<section class="mt-8 mb-14">
+            	<div class="container">
+               		<!-- row -->
+               		<div class="row">
+                  		<div class="col-lg-12">
+                     		<div class="mb-8">
+                        		<!-- heading -->
+                        		<h3 class="mb-1">보유 게임</h3>
+                     		</div>
+							 <div>
+								<!-- heading -->
+								<div class="row">
+									<div class="col-lg-8">
+										<!-- form -->
+										<form class="row g-6 needs-validation" novalidate>
+											<div class="card card-lg">
+												<div class="card-body p-6 d-flex flex-column gap-3">
+													<div class="col-12">
+														<!-- input -->
+														<h6 class="h6">게임명<span style="color: red;"> *</span></h6>
+														<input type="text" class="form-control" id="sleeve" value="캘리코" disabled />
 													</div>
-												</div>
-												<div>
-													<!-- social -->
-													<a href="#" class="ms-2 text-muted"><i class="bi bi-chat-dots fs-6"></i> 댓글 22</a>
-													<a href="#" class="ms-2 text-muted"><i class="bi bi-link-45deg fs-6"></i> URL 복사</a>
-												</div>
-											</div>
-											<hr class="mt-4" />
-											<!-- text -->
-											<div class="mb-8">
-												<p>
-													재미있어요!!!!!!<br/>
-													재미있어요!!!!!!<br/>
-													재미있어요!!!!!!<br/>
-													재미있어요!!!!!!<br/>
-													재미있어요!!!!!!<br/>
-													재미있어요!!!!!!
-												</p>
-											</div>
-											<div class="d-flex justify-content-between align-items-center">
-												<div>
-													<!-- social -->
-													<a href="#" class="ms-2 text-muted"><i class="bi bi-chat-dots fs-6"></i> 댓글 22</a>
-												</div>
-												<div>
-													<!-- social -->
-													<a href="#" class="ms-2 text-muted"><i class="bi bi-link-45deg fs-6"></i> URL 복사</a>
-												</div>
-											</div>
-											<hr class="mt-4" />
-											<div class="d-flex align-items-center">
-												<div class="d-flex align-items-center">
-													<img src="../assets/images/avatar/avatar-1.jpg" alt=""
-														class="rounded-circle avatar-md" />
-													<div class="ms-2 lh-1">
-														<h6 class="mb-0">홍미자</h6>
-														<div class="mt-1">감사합니다!</div>
-														<div class="mt-1">
-															<span class="text-secondary small">
-																2025-02-25 23:00
-																<a href="#" class="ms-2 text-muted">답글 쓰기</a>
-															</span>
-														</div>
+													<div class="col-12">
+														<!-- input -->
+														<h6 class="h6">사용 슬리브(프로텍터)</h6>
+														<input type="text" class="form-control" id="sleeve" value="팝콘블라 7070" />
+													</div>
+													<div class="col-12">
+														<!-- input -->
+														<h6 class="h6">사용 코인 캡슐</h6>
+														<input type="text" class="form-control" id="coin" value="없음" />
+													</div>
+													<div class="col-12 mb-1">
+														<h6 class="h6">메모</h6>
+														<textarea class="form-control" id="memo" rows="5" style="resize: none;">3명도 괜찮음</textarea>
 													</div>
 												</div>
 											</div>
-											<div class="col-md-10 offset-md-2">
-												<hr class="mt-4" />
-												<div class="d-flex align-items-center">
-													<div class="d-flex align-items-center">
-														<img src="../assets/images/avatar/avatar-2.jpg" alt=""
-															class="rounded-circle avatar-md" />
-														<div class="ms-2 lh-1">
-															<h6 class="mb-0">김말자</h6>
-															<div class="mt-1">감사합니다!</div>
-															<div class="mt-1">
-																<span class="text-secondary small">
-																	2025-02-25 23:00
-																	<a href="#" class="ms-2 text-muted">답글 쓰기</a>
-																</span>
-															</div>
-														</div>
-													</div>
-												</div>
+											<!-- button -->
+											<div class="mb-3 text-center">
+												<button class="btn btn-primary" type="submit">저장</button>&nbsp;
+												<a href="./myboardgame-holding.html" class="btn btn-light">취소</a>
 											</div>
-											<hr class="mt-4" />
-											<div class="d-flex align-items-center">
-												<div class="d-flex align-items-center">
-													<img src="../assets/images/avatar/avatar-1.jpg" alt=""
-														class="rounded-circle avatar-md" />
-													<div class="ms-2 lh-1">
-														<h6 class="mb-0">홍미자</h6>
-														<div class="mt-1">감사합니다!</div>
-														<div class="mt-1">
-															<span class="text-secondary small">
-																2025-02-25 23:00
-																<a href="#" class="ms-2 text-muted">답글 쓰기</a>
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<hr class="mt-4" />
-											<div class="d-flex align-items-center mb-5">
-												<div class="d-flex align-items-center">
-													<img src="../assets/images/avatar/avatar-1.jpg" alt=""
-														class="rounded-circle avatar-md" />
-													<div class="ms-2 lh-1">
-														<h6 class="mb-0">홍미자</h6>
-														<div class="mt-1">감사합니다!</div>
-														<div class="mt-1">
-															<span class="text-secondary small mb-5">
-																2025-02-25 23:00
-																<a href="#" class="ms-2 text-muted">답글 쓰기</a>
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="card">
-												<div class="card-body">
-													<div class="d-flex align-items-center mb-5">
-														<div class="d-flex align-items-center">
-															<img src="../assets/images/avatar/avatar-1.jpg" alt=""
-																class="rounded-circle avatar-md" />
-															<div class="ms-2 lh-1">
-																<h6 class="mb-0">홍미자</h6>
-															</div>
-														</div>
-													</div>
-		
-													<textarea class="form-control mb-5" id="formContent" rows="1" name="text" placeholder="댓글을 남겨보세요."
-														oninput='this.style.height = ""; this.style.height = this.scrollHeight + "px"'
-														style="resize: none; max-height: 100px; border: none;"></textarea>
-														<div class="mt-1">
-															<span class="text-secondary">
-																<a href="#" class="ms-2 text-muted">등록</a>
-															</span>
-														</div>
-												</div>
-											</div>
-											<div class="mb-5"></div>
-											</div>
-										</div>
-										<!-- button -->
-										<div class="mb-3 text-center">
-										<a href="./board-game-review.html" class="btn btn-outline-primary">목록</a>&nbsp;
-										<a href="#" class="btn btn-outline-secondary"><i class="bi bi-arrow-up fs-6"></i> Top</a>
-										</div>
-									</form>
+										</form>
+									</div>
 								</div>
 							</div>
-						</div>
-					 </div>
-				  </div>
-			</section>
-		 </main>
+                     	</div>
+                  	</div>
+               	</div>
+         	</section>
+      	</main>
 
 		<!-- Footer -->
 		<footer class="footer">
@@ -385,24 +279,25 @@
 		</footer>
 
       	<!-- Javascript-->
+		<script src="../assets/libs/@yaireo/tagify/dist/tagify.js"></script>
+
      	<!-- Libs JS -->
 		<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 
 		<!-- Theme JS -->
 		<script src="../assets/js/theme.min.js"></script>
+		<script src="../assets/js/vendors/validation.js"></script>
 
-		<script>
-			const textarea = document.querySelector("textarea");
-			const btn = document.querySelector("button");
-			const text = document.querySelector("p");
-	
-			function clickBtn() {
-				text.innerHTML = textarea.value;
-				textarea.value = '';
-				textarea.style.height = '30px';
-			}
-	
-		</script>
+		<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+		<script src="../assets/js/vendors/dropzone.js"></script>
+		<script src="../assets/libs/quill/dist/quill.min.js"></script>
+		<script src="../assets/js/vendors/editor.js"></script>
+
+		<!-- <script>
+			var fp = flatpickr(document.getElementById("formDate"), {
+				"locale": "ko"
+			});
+		</script> -->
    	</body>
 </html>

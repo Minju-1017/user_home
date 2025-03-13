@@ -17,7 +17,6 @@
 		<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
 		<link href="../assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet">
 		<link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
-		
 
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="../assets/css/theme.min.css">
@@ -127,7 +126,7 @@
 										<ul class="dropdown-menu">
 											<li><a class="dropdown-item" href="./myshopping-sales.html">판매 내역</a></li>
 											<li><a class="dropdown-item" href="./myshopping-purchase.html">구매 내역</a></li>
-											<li><a class="dropdown-item" href="./myshopping-address.html">배송지 주소</a></li>
+											<!-- <li><a class="dropdown-item" href="./myshopping-address.html">배송지 주소</a></li> -->
 										</ul>
 									</li>
 									<li class="nav-item dropdown w-100 w-lg-auto">
@@ -168,12 +167,12 @@
 												<div class="card-body p-6 d-flex flex-column gap-3">
 													<div class="col-12">
 														<!-- input -->
-														<label for="title" class="form-label">제목</label>
+														<h6 class="h6">제목<span style="color: red;"> *</span></h6>
 														<input type="text" class="form-control" id="title" required />
 														<div class="invalid-feedback">제목을 입력해 주세요.</div>
 													</div>
-													<div class="col-12">
-														<label for="editor" class="form-label">내용</label>
+													<div class="col-12 mb-1">
+														<h6 class="h6">내용</h6>
 														<!-- <textarea class="form-control" id="editor" rows="10" style="resize: none;" required></textarea> -->
 														<!-- <input type="text" class="form-control py-8" id="editor" required /> -->
 														<div class="py-8" id="editor"></div>
