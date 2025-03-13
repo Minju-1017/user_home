@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta content="Codescandy" name="author">
       	<title>Boardgame Mania - 자유게시판</title>
+
+		<link href="../assets/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../assets/libs/@yaireo/tagify/dist/tagify.css" />
+
       	<!-- Favicon icon-->
 		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
@@ -158,21 +162,26 @@
 								<div class="row">
 									<div class="col-lg-8">
 										<!-- form -->
-										<form class="needs-validation" novalidate>
-											<!-- input -->
-											<div class="mb-3">
-												<label for="formTitle" class="form-label">제목</label>
-												<input type="text" class="form-control" id="formTitle" required />
-												<div class="invalid-feedback">제목을 입력해 주세요.</div>
-											</div>
-											<!-- input -->
-											<div class="mb-3">
-												<label for="formContent" class="form-label">내용</label>
-												<textarea class="form-control" id="formContent" rows="10" style="resize: none;" required></textarea>
-												<div class="invalid-feedback">내용을 입력해 주세요.</div>
+										<form class="row g-6 needs-validation" novalidate>
+											<div class="card card-lg">
+												<div class="card-body p-6 d-flex flex-column gap-3">
+													<div class="col-12">
+														<!-- input -->
+														<label for="title" class="form-label">제목</label>
+														<input type="text" class="form-control" id="title" required />
+														<div class="invalid-feedback">제목을 입력해 주세요.</div>
+													</div>
+													<div class="col-12">
+														<label for="editor" class="form-label">내용</label>
+														<!-- <textarea class="form-control" id="editor" rows="10" style="resize: none;" required></textarea> -->
+														<!-- <input type="text" class="form-control py-8" id="editor" required /> -->
+														<div class="py-8" id="editor"></div>
+														<div class="invalid-feedback">내용을 입력해 주세요.</div>
+													</div>
+												</div>
 											</div>
 											<!-- button -->
-											<div class="mb-3">
+											<div class="mb-3 text-center">
 												<button class="btn btn-primary" type="submit">저장</button>&nbsp;
 												<a href="./board-free.html" class="btn btn-light">취소</a>
 											</div>
@@ -264,16 +273,20 @@
 		</footer>
 
       	<!-- Javascript-->
+		<script src="../assets/libs/@yaireo/tagify/dist/tagify.js"></script>
+
      	<!-- Libs JS -->
 		<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
 
-		<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-		<!-- <script src="../assets/libs/flatpickr/dist/l10n/ko.js"></script> -->
-
 		<!-- Theme JS -->
 		<script src="../assets/js/theme.min.js"></script>
 		<script src="../assets/js/vendors/validation.js"></script>
+
+		<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+		<script src="../assets/js/vendors/dropzone.js"></script>
+		<script src="../assets/libs/quill/dist/quill.min.js"></script>
+		<script src="../assets/js/vendors/editor.js"></script>
 
 		<!-- <script>
 			var fp = flatpickr(document.getElementById("formDate"), {
