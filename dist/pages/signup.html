@@ -94,8 +94,8 @@
                   <div class="col-12">
                     <label class="form-label visually-hidden">생년월일</label>
                     <!-- <input type="text" class="form-control flatpickr" id="formSignupBirth" placeholder="생년월일 예) 12/01/2000" required /> -->
-                    <input type="text" class="form-control" id="formSignupBirth" placeholder="생년월일 예) 12/01/2000" required />
-                    <div class="invalid-feedback">생년월일을 입력해 주세요.</div>
+                    <input type="number" class="form-control" id="formSignupBirth" placeholder="생년월일 예) 20250101" oninput="handleOnInput(this, 8)" required />
+                    <div class="invalid-feedback">생년월일 8자리를 입력해 주세요.</div>
                   </div>
                   <div class="col-12">
                     <label class="form-label visually-hidden">성별</label>
@@ -210,13 +210,13 @@
     <script src="../assets/js/vendors/validation.js"></script>
     <script src="../assets/js/theme.min.js"></script>
 
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
 			function handleOnInput(el, maxlength) {
 				if(el.value.length > maxlength) {
 					el.value = el.value.substr(0, maxlength);
 				}
 			}
-		</script> -->
+		</script>
 
     <!-- <script>
 			var fp = flatpickr(document.getElementById("formSignupBirth"), {
